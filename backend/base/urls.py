@@ -7,6 +7,4 @@ router = DefaultRouter()
 router.register(r'base-int', BaseIntViewSet)
 router.register(r'base-uuid', BaseUUIDViewSet)
 
-urlpatterns = [
-    path('', include(router.urls))
-]
+urlpatterns = [path('', include(router.urls))]
